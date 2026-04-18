@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <!--==================== UNICONS 图标====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css" />
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <!-- iconfont font class 方式引用图标 -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://at.alicdn.com/t/c/font_3900458_82z46p85im.css"
+    /> -->
+
+    <title>方朝阳 | 前端工程师</title>
+  </head>
+
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header scroll-header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">方朝阳</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">
+                <i class="uil uil-estate nav__icon"></i>
+                <p i18n="home">主页</p>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <i class="uil uil-user nav__icon"></i>
+                <p i18n="about">关于</p>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class="uil uil-file-alt nav__icon"></i>
+                <p i18n="skills">技能</p>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link">
+                <i class="uil uil-scenery nav__icon"></i>
+                <p i18n="portfolio">项目集</p>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class="uil uil-message nav__icon"></i>
+                <p i18n="contact">联系方式</p>
+              </a>
+            </li>
+            <li class="nav__item">
+              <div class="nav__link" id="translate" value="en">
+                <svg class="icon nav__icon-svg" aria-hidden="true">
+                  <use xlink:href="#icon-fanyi"></use>
+                </svg>
+                <a class="=nav__link" id="nav__translate">Translate</a>
+              </div>
+            </li>
+          </ul>
+          <i class="uil uil-times nav__close" id="nav-close"></i>
+        </div>
+
+        <div class="nav__btns">
+          <i class="uil uil-sun change-theme" id="theme-button"></i>
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="uil uil-apps"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__content grid">
+            <div class="home__social">
+              <a href="mailto:490094129@qq.com" class="home__social-icon" aria-label="email">
+                <i class="uil uil-envelope"></i>
+              </a>
+              <a href="#portfolio" class="home__social-icon" aria-label="portfolio">
+                <i class="uil uil-briefcase-alt"></i>
+              </a>
+              <a href="#contact" class="home__social-icon" aria-label="contact">
+                <i class="uil uil-message"></i>
+              </a>
+            </div>
+            <div class="home__data">
+              <h1 class="home__title" i18n="home__title">方朝阳</h1>
+              <h3 class="home__subtitle" i18n="home__subtitle">前端工程师</h3>
+              <p class="home__description" i18n="home__description">
+                8 年前端开发经验，聚焦教育科技与 SaaS 产品，擅长 Three.js 交互、Canvas 可视化与组件化业务系统建设。
+              </p>
+              <a href="#contact" class="button button-flex">
+                <span i18n="home__contact">与我联系</span>
+                <i class="uil uil-message button__icon"></i>
+              </a>
+            </div>
+            <div class="home_model">
+              <canvas class="webgl"></canvas>
+            </div>
+          </div>
+          <div class="home__scroll">
+            <a href="#about" class="home__scroll-button button--flex">
+              <i class="uil uil-mouse-alt-2 home__scroll-mouse"></i>
+              <span class="home__scroll-name" i18n="home__scroll-name">继续浏览</span>
+              <i class="uil uil-arrow-down home__scroll-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+        <h2 class="section__title" i18n="about__title">关于我</h2>
+        <span class="section__subtitle" i18n="about__subtitle">个人简介</span>
+        <div class="about__container container grid">
+          <img src="assets/img/about.png" alt="" class="about__img" />
+
+          <div class="about__data">
+            <p class="about__description" i18n="about__description"></p>
+
+            <div class="about__info">
+              <div>
+                <span class="about__info-title">8+</span>
+                <span class="about__info-name" i18n="about__info-name1">年前端<br />经验</span>
+              </div>
+
+              <div>
+                <span class="about__info-title">2+</span>
+                <span class="about__info-name" i18n="about__info-name2">核心<br />项目</span>
+              </div>
+
+              <div>
+                <span class="about__info-title">2</span>
+                <span class="about__info-name" i18n="about__info-name3"
+                  >任职<br />公司</span
+                >
+              </div>
+            </div>
+
+            <div class="about__buttons">
+              <a download="" href="assets/pdf/简历.pdf" class="button button--flex">
+                <span i18n="download">下载简历</span><i class="uil uil-download-alt button__icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== SKILLS ====================-->
+      <section class="skills section" id="skills">
+        <h2 class="section__title" i18n="skills__title">技能</h2>
+        <span class="section__subtitle" i18n="skills__subtitle">核心能力分布</span>
+
+        <div class="skills__container container grid">
+          <div>
+            <!--==================== SKILLS 1 ====================-->
+            <div class="skills__content skills__open">
+              <div class="skills__header">
+                <i class="uil uil-brackets-curly skills__icon"></i>
+
+                <div>
+                  <h1 class="skills__title" i18n="home__subtitle">前端工程师</h1>
+                  <span class="skills__subtitle" i18n="skills__years">8 年项目经验</span>
+                </div>
+
+                <i class="uil uil-angle-down skills__arrow"></i>
+              </div>
+
+              <div class="skills__list grid">
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">HTML</h3>
+                    <span class="skills__number">90%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <div class="skills__percentage skills__html"></div>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">CSS</h3>
+                    <span class="skills__number">90%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <div class="skills__percentage skills__css"></div>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">JavaScript</h3>
+                    <span class="skills__number">90%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <div class="skills__percentage skills__js"></div>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">TypeScript</h3>
+                    <span class="skills__number">85%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <div class="skills__percentage skills__vue"></div>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Vue 2 / Vue 3</h3>
+                    <span class="skills__number">90%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <div class="skills__percentage skills__three"></div>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">React</h3>
+                    <span class="skills__number">85%</span>
+                  </div>
+
+                  <div class="skills__bar">
+                    <div class="skills__percentage skills__webgl"></div>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Three.js</h3>
+                    <span class="skills__number">90%</span>
+                  </div>
+
+                  <div class="skills__bar">
+                    <div class="skills__percentage skills__cesium"></div>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Canvas / Konva / Fabric</h3>
+                    <span class="skills__number">85%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <div class="skills__percentage skills__node"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--==================== SKILLS 2 ====================-->
+            <div class="skills__content skills__close">
+              <div class="skills__header">
+                <i class="uil uil-server-network skills__icon"></i>
+
+                <div>
+                  <h1 class="skills__title" i18n="skills__title2">工程化与可视化</h1>
+                  <span class="skills__subtitle" i18n="skills__years2">教育科技与 SaaS 场景</span>
+                </div>
+
+                <i class="uil uil-angle-down skills__arrow"></i>
+              </div>
+
+              <div class="skills__list grid">
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Ant Design / 组件库</h3>
+                    <span class="skills__number">85%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <div class="skills__percentage skills__java"></div>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">GSAP / X6 / G6 / 性能优化</h3>
+                    <span class="skills__number">80%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <div class="skills__percentage skills__python"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== QUALIFICATION ====================-->
+      <section class="qualification section">
+        <h2 class="section__title" i18n="qualification__title">经历</h2>
+        <span class="section__subtitle" i18n="qualification__subtitle">教育与工作经历</span>
+        <div class="qualification__container container">
+          <div class="qualification__tabs">
+            <div class="qualification__button button--flex qualification__active" data-target="#education">
+              <i class="uil uil-graduation-cap qualification__icon"></i>
+              <span i18n="education">教育</span>
+            </div>
+
+            <div class="qualification__button button--flex" data-target="#work">
+              <i class="uil uil-briefcase-alt qualification__icon"></i>
+              <span i18n="work">工作</span>
+            </div>
+          </div>
+          <div class="qualification__sections">
+            <!--==================== QUALIFICATION CONTENT 1 ====================-->
+            <div class="qualification__content qualification__active" data-content id="education">
+              <!--==================== QUALIFICATION 1 ====================-->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title" i18n="qualification1__title">软件技术</h3>
+                  <span class="qualification__subtitle" i18n="qualification1__subtitle">合肥科技职业学院</span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2015 - 2018
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+              </div>
+              <!--==================== QUALIFICATION 2 ====================-->
+              <div class="qualification__data">
+                <div></div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+
+                <div>
+                  <h3 class="qualification__title" i18n="qualification2__title">计算机科学与技术</h3>
+                  <span class="qualification__subtitle" i18n="qualification2__subtitle">黄山学院</span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2020 - 2022
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--==================== QUALIFICATION CONTENT 2 ====================-->
+            <div class="qualification__content" data-content id="work">
+              <!--==================== QUALIFICATION 1 ====================-->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title" i18n="qualification3__title">前端开发工程师</h3>
+                  <span class="qualification__subtitle" i18n="qualification3__subtitle">安徽习悦教育科技有限公司 · 内容研发部</span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2018.03 - 2024.01
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+              </div>
+
+              <div class="qualification__data">
+                <div></div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <!-- <span class="qualification__line"></span> -->
+                </div>
+                <div>
+                  <h3 class="qualification__title" i18n="qualification4__title">前端开发工程师</h3>
+                  <span class="qualification__subtitle" i18n="qualification4__subtitle">安徽渔之蓝教育软件有限公司 · 技术研发部</span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2024.04 - 2026.04
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== PORTFOLIO ====================-->
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section__title" i18n="portfolio__title">项目展示</h2>
+        <span class="section__subtitle" i18n="portfolio__subtitle">代表项目与能力落地</span>
+
+        <div class="portfolio__container container swiper-container">
+          <div class="swiper-wrapper">
+            <!--==================== PORTFOLIO 1 ====================-->
+
+            <div class="portfolio__content grid swiper-slide">
+              <img src="assets/img/product/portfolio1.png" alt="" class="portfolio__img" />
+
+              <div class="portfolio_">
+                <h3 class="portfolio__title" i18n="portfolio1__title">火花学院交互式教学资源平台</h3>
+                <p class="portfolio__description" i18n="portfolio1__description">
+                  基于 Three.js、Vue、TypeScript 与 GSAP 开发 3D 教学场景和互动资源平台，负责粒子特效、着色器动画、模型拆分演示及课堂交互体验。
+                </p>
+                <a
+                  href="#contact"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  <span i18n="portfolio__button">查看详情</span>
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!--==================== PORTFOLIO 2 ====================-->
+
+            <div class="portfolio__content grid swiper-slide">
+              <img src="assets/img/product/portfolio2.png" alt="" class="portfolio__img" />
+
+              <div class="portfolio_">
+                <h3 class="portfolio__title" i18n="portfolio2__title">教学素材与学科工具引擎</h3>
+                <p class="portfolio__description" i18n="portfolio2__description">
+                  结合 Konva.js、Fabric.js 与 Interact.js 构建 2D 素材库、画笔批注、拖拽缩放旋转与吸附算法，支撑教学场景中的编辑与演示效率。
+                </p>
+                <a
+                  href="#contact"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  <span i18n="portfolio__button">查看详情</span>
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!--==================== PORTFOLIO 3 ====================-->
+
+            <div class="portfolio__content grid swiper-slide">
+              <img src="assets/img/product/portfolio3.png" alt="" class="portfolio__img" />
+
+              <div class="portfolio_">
+                <h3 class="portfolio__title" i18n="portfolio3__title">SaaS 低代码系统</h3>
+                <p class="portfolio__description" i18n="portfolio3__description">
+                  使用 React、Ant Design 与 TypeScript 实现审批流、动态表单、列表渲染引擎和流程设计器，并完成 Web 与移动端适配、组件库沉淀及性能优化。
+                </p>
+                <a
+                  href="#contact"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  <span i18n="portfolio__button">查看详情</span>
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- add arrows-->
+          <div class="swiper-button-next">
+            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+          </div>
+
+          <div class="swiper-button-prev">
+            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+          </div>
+
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!--==================== CONTACT ME ====================-->
+      <section class="contact section" id="contact">
+        <h2 class="section__title" i18n="contact__title">联系方式</h2>
+        <span class="section__subtitle" i18n="contact__subtitle">欢迎沟通前端岗位机会</span>
+
+        <div class="contact__container container grid">
+          <div>
+            <div class="contact__information">
+              <i class="uil uil-envelope contact__icon"></i>
+              <div>
+                <h3 class="contact__title" i18n="wechat">邮箱</h3>
+                <span class="contact__subtitle" i18n="wechat__account">490094129@qq.com</span>
+              </div>
+            </div>
+
+            <div class="contact__information">
+              <i class="uil uil-briefcase-alt contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title" i18n="email">求职方向</h3>
+                <span class="contact__subtitle" i18n="email__address">前端工程师</span>
+              </div>
+            </div>
+
+            <div class="contact__information">
+              <i class="uil uil-layer-group contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title" i18n="location">核心技术</h3>
+                <span class="contact__subtitle" i18n="location__detail">Vue / React / TypeScript / Three.js</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+      <div class="footer__bg">
+        <div class="footer__container container grid">
+          <div>
+            <h1 class="footer__title">方朝阳</h1>
+            <span class="footer__subtitle" i18n="home__subtitle">前端工程师</span>
+          </div>
+
+          <ul class="footer__links">
+            <li>
+              <a href="#skills" class="footer__link" i18n="skills">技能</a>
+            </li>
+            <li>
+              <a href="#portfolio" class="footer__link" i18n="portfolio">项目</a>
+            </li>
+            <li>
+              <a href="#contact" class="footer__link" i18n="contact">联系方式</a>
+            </li>
+          </ul>
+
+          <div class="footer__socials">
+            <a href="mailto:490094129@qq.com" class="icon footer__social" aria-label="email">
+              <i class="uil uil-envelope"></i>
+            </a>
+            <a href="#portfolio" class="icon footer__social" aria-label="portfolio">
+              <i class="uil uil-briefcase-alt"></i>
+            </a>
+            <a href="#contact" class="icon footer__social" aria-label="contact">
+              <i class="uil uil-message"></i>
+            </a>
+          </div>
+        </div>
+
+        <p class="footer__copy">
+          &#169; Fang Chaoyang. Template inspired by
+          <a class="footer__copy" href="https://www.youtube.com/c/Bedimcode" target="_blank">Bedimcode</a>
+        </p>
+      </div>
+    </footer>
+
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+    <!--==================== SWIPER JS ====================-->
+    <script src="assets/js/default/swiper-bundle.min.js"></script>
+
+    <!-- iconfont JS -->
+    <script src="assets/js/default/iconfont.js"></script>
+    <!-- jquery -->
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="assets/js/default/jquery.i18n.min.js"></script>
+    <!--==================== MAIN JS ====================-->
+    <script src="assets/js/default/main.js"></script>
+
+    <!-- translate JS -->
+    <script src="assets/js/default/cn-en-translate.js"></script>
+
+    <!-- gsap JS -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+
+    <!-- module模块化 -->
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "./assets/js/three/build/three.module.js",
+          "three/examples/jsm/": "./assets/js/three/jsm/"
+        }
+      }
+    </script>
+
+    <!-- MyRoom JS -->
+    <script type="module" src="assets/js/change/room.js"></script>
+  </body>
+</html>
