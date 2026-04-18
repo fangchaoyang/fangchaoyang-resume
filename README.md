@@ -5,8 +5,8 @@
 
 改的时候，感觉原生还是比不上框架来的方便，后续有时间我会抽离一个**vue组件**的版本。
 
-**开源地址**：[个人简历](https://github.com/bosombaby/base-resume)
-**在线访问**：[个人简历](https://resume.vrteam.top/)
+**开源地址**：[个人简历](https://github.com/fangchaoyang/fangchaoyang-resume)
+**在线访问**：[个人简历](https://fangchaoyang.github.io/fangchaoyang-resume/#contact)
 **参考资源**：[responsive-portfolio-website](https://github.com/ASouthernCat/responsive-portfolio-website)
 # 二、模型准备
 ## 2.1 资源寻找
