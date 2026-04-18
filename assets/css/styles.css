@@ -674,12 +674,6 @@ img {
 
 .portfolio__content {
   padding: 0 1.5rem;
-  justify-items: center;
-}
-
-.portfolio_ {
-  max-width: 560px;
-  text-align: center;
 }
 
 .portfolio__img {
@@ -1108,7 +1102,6 @@ img {
       }
       .portfolio__content {
           align-items: center;
-          justify-items: center;
       }
       .project {
           text-align: initial;
@@ -1164,7 +1157,7 @@ img {
       grid-template-columns: repeat(3, 238px);
   }
   .portfolio__content {
-      column-gap: 0;
+      column-gap: 5rem;
   }
   .swiper-portfolio-icon {
       font-size: 3.5rem;
